@@ -136,7 +136,7 @@ module.exports = class TwoZeroFourEight extends events {
       .setColor(this.options.embed.color)
       .setImage('attachment://gameboard.png')
       .addFields({ name: 'Current Score', value: this.score.toString() })
-      .setFooter({ text: this.message.author.tag, iconURL: this.message.author.displayAvatarURL({ dynamic: true }) });
+      .setFooter({ text: 'Made with headpats and cuddles', iconURL: this.message.author.displayAvatarURL({ dynamic: true }) });
 
       return msg.edit({ embeds: [embed], files: [await this.getBoardImage()], attachments: [] });
     })
